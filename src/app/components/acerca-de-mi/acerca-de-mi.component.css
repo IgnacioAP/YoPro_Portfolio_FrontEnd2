@@ -1,9 +1,7 @@
-
-.separation-bar{
-    color: white;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    margin: 30px 90px;
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');
+*{
+  font-family: 'Cabin', sans-serif;
+  font-size: large;
 }
 
 .mmm{
@@ -31,17 +29,33 @@
   .child1 h2 {
     align-self: flex-start;
     margin-bottom: 1em;
+    font-size: 42px;
   }
   
-  .child2 {
+  .image-container {
+    max-width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+  }
+  
+  .image-container img {
+    max-width: 600px;
+    height: auto;
+    border: 7px solid rgb(49, 4, 80);
+    border-radius: 2rem;
+    box-shadow: 15px 19px 14px rgba(73, 7, 117, 0.404);
+  }
+
+  @media screen and (min-width: 768px) {
+    .image-container {
+      margin-left: 130px;
+    }
   }
   
   .child2 img {
-    max-width: 100%;
-    max-height: 100%;
+
+    filter: contrast(2%);
   }
   
   @media screen and (max-width: 768px) {
@@ -67,7 +81,7 @@
 }
 
 .project {
-    flex-basis: calc(33.33% - 10px);
+    flex-basis: calc(33.33% - 10px); /* This will give each child div a width of one-third minus 10 pixels for the margin */
     margin: 5px;
     position: relative;
 }
@@ -79,7 +93,7 @@
 .component-wrapper {
     position: absolute;
     top: 0;
-    right: -20%;
+    right: -20%; /* Adjust this value to position the component div to the right */
 }
 
 .project img{

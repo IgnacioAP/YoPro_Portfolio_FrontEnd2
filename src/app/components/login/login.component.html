@@ -1,0 +1,27 @@
+<div class="container container-form">
+    <h1 class="text-center mb-4">Ingresar Usuario</h1>
+    <form class="d-flex flex-column justify-content-center">
+        <div class="mb-5 form-input">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email" required>
+        </div>
+        <div class="mb-5 form-input">
+            <label for="password" class="form-label">Constraseña</label>
+            <input type="password" class="form-control" id="password" name="password" [(ngModel)]="password" required>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start btn-container">
+            <button class="btn btn-primary me-md-2" type="submit" (click)="LogIn()">Aceptar</button>
+            <button class="btn btn-secondary" type="button" onclick="location.href='index.html';">Cancelar</button>
+            <button class="btn btn-warning" type="button" (click)="EmergencyLogin()" style="color: black;">Acceso de emergencia en caso de que los servicios esten caidos</button>
+        </div>
+        <div *ngIf="loading" class="loading-overlay">
+            <img src="../../../assets/images/loading.gif" alt="Loading" class="load">
+        </div>
+        <div>
+            
+        </div>
+    </form>
+    <div style="margin-top: 20px;" class="text-danger" *ngIf="errorMessage">{{errorMessage}}</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>

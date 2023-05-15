@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@500&display=swap');
+
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}
+.fix-width{
+    width: 100%;
+    margin-right: calc(100vw - 100%);
+}
+.logo{
+    cursor: default;
+}
+.navegacion{
+    top: 0;
+    padding: 10px;
+    background: linear-gradient(90deg, rgba(7,3,75,1) 17%, rgba(4,4,110,1) 60%, rgba(3,44,130,1) 100%);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgb(192, 192, 192);
+    z-index: 1;
+
+}
+.navegacion a{
+    color: white;
+}
+.margin-container{
+    margin:0 7% 0 7%;
+}
+
+#navbarSupportedContent{
+    justify-content: end;
+}
+
+#navbarSupportedContent ul li{
+    text-align: center;
+    width: 120px;
+    transition: background-color 1s linear;
+}
+
+#navbarSupportedContent ul li :hover{
+    background-color: rgba(4, 56, 167, 0.541);
+    border-radius: 33rem;
+}
+
+.nav-item{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 720px){
+    .nav-item{
+        width: auto!important;
+        padding: 0 150px;
+    }
+    .navbar-collapse {
+        background-color: #130449;
+        border: 1px solid rgb(197, 197, 197);
+        border-radius: 3rem;
+    }
+}
+
+.popper {
+    display: inline-block;
+    background: #361a0e;
+    color: rgb(233, 219, 138);
+    border-radius: 8px;
+    padding: 10px; 
+    border: solid 1px rgb(233, 219, 138);
+  }
+.popper[x-placement^="bottom"] {
+    margin-top: 15px;
+  }
+  
+  .popper[x-placement^="top"] {
+    margin-bottom: 15px;
+  }
+  
+  .popper__arrow {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    border: solid 10px transparent;
+  }
+  
+  .popper[x-placement^="top"] .popper__arrow {
+    border-bottom-width: 0;
+    border-top-color: rgb(233, 219, 138);
+    bottom: -10px;
+  }
+  
+  .popper[x-placement^="bottom"] .popper__arrow {
+    border-top-width: 0;
+    border-bottom-color: rgb(233, 219, 138);
+    top: -10px;
+  }

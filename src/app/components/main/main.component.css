@@ -1,0 +1,36 @@
+.separation-bar{
+    color: rgb(197, 197, 197);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin: 30px 90px;
+}
+
+.dark-bar {
+    height: 60px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #161616fb;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .labels-container {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+  }
+  
+  .label {
+    flex: 1;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .dark-bar{
+      margin-top: 30px;
+    }
+  }

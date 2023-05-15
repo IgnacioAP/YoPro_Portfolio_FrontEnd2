@@ -1,0 +1,65 @@
+.vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 2rem;
+}
+
+.vertical-center button{
+    max-width: 120px;
+}
+
+.form-group label{
+    margin-bottom: 20px;
+}
+
+.contacto-container{
+    min-height: 80vh;
+}
+
+#message{
+    min-height: 50vh;
+}
+
+.popper {
+  display: inline-block;
+  background: #361a0e;
+  color: rgb(233, 219, 138);
+  border-radius: 8px;
+  padding: 10px; 
+  border: solid 1px rgb(233, 219, 138);
+}
+
+.popper[x-placement^="bottom"] {
+  margin-top: 15px;
+}
+
+.popper[x-placement^="top"] {
+  margin-bottom: 15px;
+}
+
+.popper__arrow {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  border: solid 10px transparent;
+}
+
+.popper[x-placement^="top"] .popper__arrow {
+  border-bottom-width: 0;
+  border-top-color: rgb(233, 219, 138);
+  bottom: -10px;
+}
+
+.popper[x-placement^="bottom"] .popper__arrow {
+  border-top-width: 0;
+  border-bottom-color: rgb(233, 219, 138);
+  top: -10px;
+}
+
+.no-resize{
+  resize: none;
+}
